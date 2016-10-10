@@ -5,7 +5,6 @@ web:
   environment:
     GITLAB_OMNIBUS_CONFIG: |
       external_url 'https://192.168.51.200'
-      nginx['redirect_http_to_https'] = true
       gitlab_rails['gitlab_shell_ssh_port'] = 2224
       nginx['redirect_http_to_https'] = true
   ports:
