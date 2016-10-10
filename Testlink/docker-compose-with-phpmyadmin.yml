@@ -1,5 +1,5 @@
 testlink:
-  image: leipurihiiva/docker-testlink
+  image: jamkit/testlink_1914
   links:
     - mysql:mysql
   ports:
@@ -11,6 +11,6 @@ phpmyadmin:
   ports:
     - "8080:80"
 mysql:
-  image: leipurihiiva/docker-mysql
+  image: jamkit/mysql_5.7
   environment:
     MYSQL_ROOT_PASSWORD: root
