@@ -1,0 +1,18 @@
+web:
+  image: 'gitlab/gitlab-ce:latest'
+  restart: always
+  hostname: '192.168.51.200'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url 'https://192.168.51.200'
+      nginx['redirect_http_to_https'] = true
+      gitlab_rails['gitlab_shell_ssh_port'] = 2224
+      nginx['redirect_http_to_https'] = true
+  ports:
+    - '80:80'
+    - '443:443'
+    - '2224:2224'
+  volumes:
+    - '/srv/gitlab/config:/etc/gitlab'
+    - '/srv/gitlab/logs:/var/log/gitlab'
+    - '/srv/gitlab/data:/var/opt/gitlab'
