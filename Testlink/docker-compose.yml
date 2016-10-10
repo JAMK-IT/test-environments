@@ -1,5 +1,5 @@
 testlink:
-  image: jamkit/teslink_1914
+  image: jamkit/testlink_1914
   links:
     - mysql:mysql
   ports:
