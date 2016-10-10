@@ -1,0 +1,16 @@
+testlink:
+  image: leipurihiiva/docker-testlink
+  links:
+    - mysql:mysql
+  ports:
+    - "80:80"
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  links:
+    - mysql:db
+  ports:
+    - "8080:80"
+mysql:
+  image: leipurihiiva/docker-mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: root
