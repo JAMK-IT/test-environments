@@ -1,0 +1,11 @@
+testlink:
+  image: jamkit/teslink_1914
+  links:
+    - mysql:mysql
+  ports:
+    - "80:80"
+mysql:
+  image: jamkit/mysql_5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+
