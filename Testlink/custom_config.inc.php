@@ -233,5 +233,4 @@
 
 $tlCfg->config_check_warning_mode = 'SILENT';
 
-$g_interface_bugs='MANTIS';
 ?>
