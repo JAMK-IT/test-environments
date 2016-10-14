@@ -1,9 +1,0 @@
----
-name: Contriboard
-description: >
-  Contriboard-service
-version: 1
-category: Cloud Reference Service
-maintainer: JAMKIT
-license: MIT
-projectURL: https://github.com/N4SJAMK/teamboard-meta
