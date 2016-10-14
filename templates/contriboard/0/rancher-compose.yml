@@ -1,0 +1,19 @@
+.catalog:
+  name: contriboard
+  version: 1
+  description: >
+    Contriboard-service
+  questions:
+    - variable: "api_url"
+      description: "Client api_url"
+      label: "API_URL:"
+      required: true
+      default: "http://192.168.51.200/api"
+      type: "string"
+    - variable: "io_url"
+      description: "Client io_url"
+      label: "IO_URL:"
+      required: true
+      default: "http://192.168.51.200"
+      type: "string"
+
