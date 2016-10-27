@@ -37,7 +37,7 @@ sudo gitlab-ctl reconfigure
 
 sudo gitlab-ctl restart
 -----------------------------------------------------------------------------
-if u can login!!
+if u cant login!!
 
 reset existing pass(db)
 
