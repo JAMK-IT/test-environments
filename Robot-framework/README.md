@@ -24,14 +24,18 @@
 ## Robot Framework
 (aka. Wat?)
 
+Robot Framework is acceptance testing-framework. It was developed by Nokia Networks, but now it`s sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
 Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD).  
-Robot Framewrok utilizes tabular syntax for tests and allows keyword-driven approaches.  
-Users can implement thttp://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.pngheir own test libraries.  
+Acceptance testing is usually a last step of development chain, where application is reviewed and checked that its working as it should.  
+Robot Framewrok utilizes tabular syntax for tests and allows keyword-driven approaches, so basically tests could be also Use Cases!  
 
-Robot Framework was initially developed by [Nokia Networks](https://networks.nokia.com/) but now it`s sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
+Selenium is testing framework for web applications and Selenium2Library is Robot Frameworks library.  
+Together they create powerful framework , which can be used to test web-applications and sites. Tests can be automated on any build server, so Robot Framework fits perfectly into patf of a continous integration chain.  
 
-Check link:  
-[Robot Framework](http://robotframework.org/).  
+Check links:  
+[Robot Framework](http://robotframework.org/). 
+[ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development)  
+[TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
 
 ## Docker
 
