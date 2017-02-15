@@ -49,11 +49,26 @@ Check link:
 
 ## Installation
 
-First useful service we should establish is a password management service. In our case CommonKey has proven itself a good option, but you may also use something else if you want. Just keep in mind that proper password management saves you from a lot of trouble in managing your project passwords.
+First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
+Next pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
+If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
 
-![CommonKey account creation](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A18%3A39.png)
+Now we have all what we need.  
 
-![CommonKey account confirmation](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A19%3A56.png)
+Lets have look what parametres you need to give to NGINX container.  
+```
+--name: Container name, could be anything..
+-p: Container port and public port
+-v: Volumes from! This is important!! modify first string before : to match your test folder path!!!
+```  
+
+Next start NGINX container using following command:  
+```
+sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html jamkit/nginx-basic  
+```
+
+
+
 
 When you have created an account and logged in you may install browser extension to make password management easier, but it is not mandatory. At the time of writing this guide the said browser extension was not available, so don't worry too much if you aren't able to install the browser extension.
 
