@@ -30,7 +30,6 @@ Users can implement thttp://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Lo
 
 Robot Framework was initially developed by [Nokia Networks](https://networks.nokia.com/) but now it`s sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
 
-http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png
 Check link:  
 [Robot Framework](http://robotframework.org/).  
 
