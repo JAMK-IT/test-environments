@@ -30,7 +30,7 @@ Acceptance testing is usually a last step of development chain, where applicatio
 Robot Framewrok utilizes tabular syntax for tests and allows keyword-driven approaches, so basically tests could be also Use Cases!  
 
 Selenium is testing framework for web applications and Selenium2Library is Robot Frameworks library.  
-Together they create powerful framework , which can be used to test web-applications and sites. Tests can be automated on any build server, so Robot Framework fits perfectly into patf of a continous integration chain.  
+Together they create powerful framework , which can be used to test web-applications and sites. Tests can be automated on any build server, so Robot Framework fits perfectly into a continous integration chain.  
 
 Check links:  
 [Robot Framework](http://robotframework.org/).  
