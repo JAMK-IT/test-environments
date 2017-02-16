@@ -51,10 +51,12 @@ Check link:
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
-### Optional NGINX
+### Optional NGINX  
 If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
 
-Now we have all what we need.  
+```  
+sudo docker pull registry.gitlab.com/jamkit/nginx-basic:latest
+```    
 
 Lets have look what parametres you need to give to NGINX container.  
 ```
@@ -66,7 +68,11 @@ Lets have look what parametres you need to give to NGINX container.
 Next start NGINX container using following command:  
 ```
 sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html jamkit/nginx-basic  
-```
+```  
+
+Navigate to your ip:80 and make sure that NGINX is working.  
+
+
 ## Robot framework container
 
 Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
