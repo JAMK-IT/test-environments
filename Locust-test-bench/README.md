@@ -14,18 +14,15 @@
 # Locust
 (aka. Wat?)
 
-Robot Framework is acceptance testing-framework. It was developed by Nokia Networks, but now its sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
-Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD).  
-Acceptance testing is usually a last step of development chain, where application is reviewed and checked that its working as it should.  
-Robot Framewrok utilizes tabular syntax for tests and allows keyword-driven approaches, so basically tests could be also Use Cases!  
-
-Selenium is testing framework for web applications and Selenium2Library is Robot Frameworks library.  
-Together they create powerful framework , which can be used to test web-applications and sites. Tests can be automated on any build server, so Robot Framework fits perfectly into a continous integration chain.  
+[Locust](http://locust.io/) is open source load testing tool written in Python. Locust is web-oriented and tests are written in Python. Locust main purpose is to emulate real users and traffic so you can know your application stability and maximum operting capacity.  
+Locust is event-based so its possible to run thousands of concurrent users on a single host.  
+Locust tests are also possible to run distributed over multiple machines.  
 
 Check links:  
-[Robot Framework](http://robotframework.org/).  
-[ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development)  
-[TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
+[Understanding Load Testing](https://smartbear.com/learn/performance-testing/what-is-load-testing/)
+[Load testing](https://en.wikipedia.org/wiki/Load_testing)
+[Performance testing](https://en.wikipedia.org/wiki/Software_performance_testing)
+[Stress testing](https://en.wikipedia.org/wiki/Stress_testing)
 
 
 # Installation
