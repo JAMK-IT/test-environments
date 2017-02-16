@@ -60,7 +60,7 @@ Lets have look what parameteres you need to give to NGINX container.
 
 Next start NGINX container using following command:  
 ```
-sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html jamkit/nginx-basic  
+sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html registry.gitlab.com/jamkit/nginx-basic  
 ```  
 
 Navigate to your ip:80 and make sure that NGINX is working.  
@@ -118,7 +118,7 @@ sudo docker run -it --rm --privileged \
 -e FILE=test.txt \
 -e OUTPUTDIR=/opt/rfw-tests/Opiskelija/test/reports \
 -v /opt/rfw-tests/Opiskelija/test:/opt/rfw-tests/Opiskelija/test \
-jamkit/robot-framework-standalone 
+registry.gitlab.com/jamkit/robot-framework-standalone 
 ```  
 
 After you have lauched container, you can see tests steps in your terminal. Tests will fail or pass and after tests are done container exits and moves reports to your reports folder what u defined in launch options.  
