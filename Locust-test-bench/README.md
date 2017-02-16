@@ -31,32 +31,60 @@ Check links:
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
-Pull latest Robot Framework image from [Gitlab.com/jamkit]https://gitlab.com/JAMKIT/Locust-standalone).  
+Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Locust-standalone).  
 
 ```  
 sudo docker pull registry.gitlab.com/jamkit/locust-standalone:latest
 ```    
+You can run container with or and without webUI! If you choose with, then u ahve to manually add parameters in browser but you see test execution live.  
 
-Lets have look what parameteres/ENV variables you can give to container.  
-```
-RUN_TYPE = (robot, pybot or sh)
-ROBOT_TESTS = Define path to your test files
-FILE = Name of your test file
-OUTPUTDIR = define path for output files
--v: Volumes from! Define path what container mounts.
-```  
-Use should use paths where NGINX or Apache can find files...  
+Below you find two examples.  
 
-You can run tests modifying following example command:  
+
+
+Example1 without webUI.  
 ```
-sudo docker run -it --rm --privileged \
--e RUN_TYPE=robot \
--e ROBOT_TESTS=/opt/rfw-tests/Opiskelija/test \
--e FILE=test.txt \
--e OUTPUTDIR=/opt/rfw-tests/Opiskelija/test/reports \
--v /opt/rfw-tests/Opiskelija/test:/opt/rfw-tests/Opiskelija/test \
-jamkit/robot-framework-standalone 
+LOCUST_FILE_PATH = Path of your test file
+LOCUST_TARGET_HOST = Target host (look right syntax below)
+LOCUST_LOCUSTFILE = Name of your test file
+LOCUST_NUM_REQUEST = Number of request until test exist
+LOCUST_USERS = Number of concurrent users
+LOCUST_HATCH_RATE = Hatch rate in seconds
+LOCUST_REPORT = Path of report
+-v = volumes from! change path before : to mount that dir to container
 ```  
+------------------------------------------------------------------
+
+Example1 run command:  
+```
+sudo docker run -it --rm --name locust \
+-e LOCUST_FILE_PATH=/opt/Locust-tests/ \
+-e LOCUST_TARGET_HOST=http://ip/ \
+-e LOCUST_LOCUSTFILE=locust-tests-new.py \
+-e LOCUST_NUM_REQUEST=50 \
+-e LOCUST_USERS=10 \
+-e LOCUST_HATCH_RATE=1 \
+-e LOCUST_REPORT=/opt/Locust-tests/report.txt \
+-v /opt/Locust-tests:/opt/Locust-tests \
+jamkit/locust-standalone
+```  
+------------------------------------------------------------------
+
+Example2 run command:  
+
+```
+sudo docker run -it --rm --name locust \
+-e LOCUST_RUN_TYPE=web \
+-e LOCUST_FILE_PATH=/opt/Locust-tests/ \
+-e LOCUST_TARGET_HOST=http://95.85.38.38/ \
+-e LOCUST_LOCUSTFILE=locust-tests-new.py \
+-v /opt/Locust-tests:/opt/Locust-tests \
+-p 8089:8089 \
+jamkit/locust-standalone
+```  
+-------------------------------------------------------------------
+
+
 
 After you have lauched container, you can see tests steps in your terminal. Tests will fail or pass and after tests are done container exits and moves reports to your reports folder what u defined in launch options.  
 
