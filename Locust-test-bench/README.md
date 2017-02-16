@@ -1,10 +1,9 @@
 ## Locust test bench
 
-![](http://qitaos.coding.me/img/logo.png)  
+![](https://pbs.twimg.com/profile_images/1867636195/locust-logo-orignal.png)  
 
 ##### Table of Contents
-[Robot Framework](#robot framework)    
-[Docker](#docker)  
+[Locust](#locust)    
 [Installation](#installation)  
  [Optional NGINX](#optionalnginx)  
  [Test cases](#testcases)  
@@ -12,7 +11,7 @@
  
 
 
-# Robot Framework
+# Locust
 (aka. Wat?)
 
 Robot Framework is acceptance testing-framework. It was developed by Nokia Networks, but now its sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
@@ -27,16 +26,6 @@ Check links:
 [Robot Framework](http://robotframework.org/).  
 [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development)  
 [TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
-
-
-# Docker
-
-Shortly. Docker is a tool to create, deploy, and run applications by using containers. Containers allow to package up an application with all of the needed libraries and dependencies. This assures that the application will be working on any other Linux-based machine regardless of machine configuration.  
-
-Check link:  
-[Docker](https://www.docker.com/).  
-
-![](http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png)  
 
 
 # Installation
