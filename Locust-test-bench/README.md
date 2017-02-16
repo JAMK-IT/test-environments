@@ -76,7 +76,7 @@ Example2 run command:
 sudo docker run -it --rm --name locust \
 -e LOCUST_RUN_TYPE=web \
 -e LOCUST_FILE_PATH=/opt/Locust-tests/ \
--e LOCUST_TARGET_HOST=http://95.85.38.38/ \
+-e LOCUST_TARGET_HOST=http://ip/ \
 -e LOCUST_LOCUSTFILE=locust-tests-new.py \
 -v /opt/Locust-tests:/opt/Locust-tests \
 -p 8089:8089 \
