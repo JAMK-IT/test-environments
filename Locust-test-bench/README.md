@@ -19,10 +19,10 @@ Locust is event-based so its possible to run thousands of concurrent users on a 
 Locust tests are also possible to run distributed over multiple machines.  
 
 Check links:  
-[Understanding Load Testing](https://smartbear.com/learn/performance-testing/what-is-load-testing/)
-[Load testing](https://en.wikipedia.org/wiki/Load_testing)
-[Performance testing](https://en.wikipedia.org/wiki/Software_performance_testing)
-[Stress testing](https://en.wikipedia.org/wiki/Stress_testing)
+[Understanding Load Testing](https://smartbear.com/learn/performance-testing/what-is-load-testing/)  
+[Load testing](https://en.wikipedia.org/wiki/Load_testing)  
+[Performance testing](https://en.wikipedia.org/wiki/Software_performance_testing)  
+[Stress testing](https://en.wikipedia.org/wiki/Stress_testing)  
 
 
 # Installation
