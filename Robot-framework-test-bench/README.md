@@ -69,7 +69,7 @@ Navigate to your ip:80 and make sure that NGINX is working.
 ## Test cases  
 
 Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
-Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
+Quick start guide can be found [here](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
 You can use either Chrome or Firefox. Look chrome example below.  
 IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
 
