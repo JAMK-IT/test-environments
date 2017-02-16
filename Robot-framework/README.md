@@ -29,6 +29,7 @@ Check links:
 [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development)  
 [TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
 
+
 # Docker
 
 Shortly. Docker is a tool to create, deploy, and run applications by using containers. Containers allow to package up an application with all of the needed libraries and dependencies. This assures that the application will be working on any other Linux-based machine regardless of machine configuration.  
@@ -42,6 +43,7 @@ Check link:
 # Installation
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
+
 
 ## Optional NGINX  
 If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
@@ -63,6 +65,7 @@ sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html
 ```  
 
 Navigate to your ip:80 and make sure that NGINX is working.  
+
 
 ## Test cases  
 
@@ -94,7 +97,9 @@ Hausta Suoraan Sivulle
 
 Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
 
-
+```  
+sudo docker pull registry.gitlab.com/jamkit/robot-framework-standalone:latest
+```    
 
 
 
