@@ -45,11 +45,7 @@ First login to your virtual machine and install docker with following steps: [do
 
 
 ## Optional NGINX  
-If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
-
-```  
-sudo docker pull registry.gitlab.com/jamkit/nginx-basic:latest
-```    
+If you dont have apache or nginx installed in your vm.
 
 Lets have look what parameteres you need to give to NGINX container.  
 ```
@@ -93,12 +89,6 @@ Hausta Suoraan Sivulle
 
 
 ## Robot framework container
-
-Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
-
-```  
-sudo docker pull registry.gitlab.com/jamkit/robot-framework-standalone:latest
-```    
 
 Lets have look what parameteres/ENV variables you can give to container.  
 ```
