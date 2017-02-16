@@ -4,9 +4,8 @@
 
 ##### Table of Contents
 [Locust](#locust)    
-[Installation](#installation)    
- [Test cases](#testcases)  
- [Robot framework containerg](#robotframeworkcontainer)   
+[Locust container](#locustcontainer)    
+ [Test cases](#testcases)   
  
 
 
@@ -24,45 +23,18 @@ Check links:
 [Stress testing](https://en.wikipedia.org/wiki/Stress_testing)  
 
 
-# Installation
-
-First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
 ![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/testi2.png)
 
 
-## Test cases  
+# Locust container
 
-Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
-Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
-You can use either Chrome or Firefox. Look chrome example below.  
-IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
+First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
-```
- *** Settings ***
-Documentation    Testataan haku
-Library    Selenium2Library
-Library    OperatingSystem
-*** Keywords ***
-Set Environment Variable    webdriver.chrome.driver      /usr/bin/chromedriver.exe
-
-*** Test Cases ***
-Hausta Suoraan Sivulle
-    Open Browser            https://en.wikipedia.org/wiki/            chrome
-    Input Text            searchInput            finland
-    Click Element            searchButton
-    Wait Until Page Contains    Finland                timeout=10
-    Title Should Be            Finland - Wikipedia
-    [Teardown]            Close All Browsers
-```  
-
-
-## Robot framework container
-
-Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
+Pull latest Robot Framework image from [Gitlab.com/jamkit]https://gitlab.com/JAMKIT/Locust-standalone).  
 
 ```  
-sudo docker pull registry.gitlab.com/jamkit/robot-framework-standalone:latest
+sudo docker pull registry.gitlab.com/jamkit/locust-standalone:latest
 ```    
 
 Lets have look what parameteres/ENV variables you can give to container.  
@@ -102,3 +74,29 @@ Under the the Privacy click on the Content settings.
 Ctrl+f JavaScript and select Allow all sites to run JavaScript (recommended).
 Click on the OK button to close it.
 Exit from settings and refresh page.  
+
+
+## Test cases  
+
+Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
+Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
+You can use either Chrome or Firefox. Look chrome example below.  
+IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
+
+```
+ *** Settings ***
+Documentation    Testataan haku
+Library    Selenium2Library
+Library    OperatingSystem
+*** Keywords ***
+Set Environment Variable    webdriver.chrome.driver      /usr/bin/chromedriver.exe
+
+*** Test Cases ***
+Hausta Suoraan Sivulle
+    Open Browser            https://en.wikipedia.org/wiki/            chrome
+    Input Text            searchInput            finland
+    Click Element            searchButton
+    Wait Until Page Contains    Finland                timeout=10
+    Title Should Be            Finland - Wikipedia
+    [Teardown]            Close All Browsers
+```  
