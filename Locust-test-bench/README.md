@@ -24,11 +24,10 @@ Check links:
 
 # Test cases  
 
-Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
-Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
-You can use either Chrome or Firefox. Look chrome example below.  
-IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
+Next write some test cases or clone contriboard tests from gitlab etc.  
 
+Official locust documention for writing locusfiles can be found at [here](http://docs.locust.io/en/latest/writing-a-locustfile.html).   
+Contriboard locust test can be found at [JAMKIT gitlab page](https://gitlab.com/JAMKIT/Locust-tests.git).  
 
 # Locust container
 
