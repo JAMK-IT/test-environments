@@ -72,6 +72,31 @@ sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html
 
 Navigate to your ip:80 and make sure that NGINX is working.  
 
+## Test cases  
+
+Next write some test cases or clone from gitlab etc.
+Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
+You can use either Chrome or Firefox. Look chrome example below.  
+IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
+
+```
+ *** Settings ***
+Documentation    Testataan haku
+Library    Selenium2Library
+Library    OperatingSystem
+*** Keywords ***
+Set Environment Variable    webdriver.chrome.driver      /usr/bin/chromedriver.exe
+
+*** Test Cases ***
+Hausta Suoraan Sivulle
+    Open Browser            https://en.wikipedia.org/wiki/            chrome
+    Input Text            searchInput            finland
+    Click Element            searchButton
+    Wait Until Page Contains    Finland                timeout=10
+    Title Should Be            Finland - Wikipedia
+    [Teardown]            Close All Browsers
+```  
+
 
 ## Robot framework container
 
