@@ -1,4 +1,4 @@
-# Robot Framework Container
+## Robot Framework Stack
 
 ![](http://qitaos.coding.me/img/logo.png)  
 
@@ -21,7 +21,7 @@
 [References and Links](#references-and-links)  
 [Questions & Answers](#questions-and-answers)
 
-## Robot Framework
+# Robot Framework
 (aka. Wat?)
 
 Robot Framework is acceptance testing-framework. It was developed by Nokia Networks, but now its sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
@@ -37,21 +37,21 @@ Check links:
 [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development)  
 [TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
 
-## Docker
+# Docker
 
 Shortly. Docker is a tool to create, deploy, and run applications by using containers. Containers allow to package up an application with all of the needed libraries and dependencies. This assures that the application will be working on any other Linux-based machine regardless of machine configuration.  
 
 Check link:  
 [Docker](https://www.docker.com/).  
 
-![](http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png)
+![](http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png)  
 
 
-## Installation
+# Installation
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
-# Optional NGINX
+### Optional NGINX
 If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
 
 Now we have all what we need.  
@@ -67,9 +67,16 @@ Next start NGINX container using following command:
 ```
 sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html jamkit/nginx-basic  
 ```
-# Robot framework container
+## Robot framework container
 
 Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
+
+
+
+
+
+
+
 
 ## Work organization
 
