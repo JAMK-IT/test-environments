@@ -8,9 +8,8 @@
 [Installation](#installation)  
  [Optional NGINX](#optionalnginx)  
  [Test cases](#testcases)  
-[Time tracking](#time-tracking)   
-[Communication channel](#communication-channel)    
-[Work organization](#work-organization)  
+ [Robot framework containerg](#robotframeworkcontainer)   
+ 
 
 
 # Robot Framework
@@ -56,7 +55,7 @@ Lets have look what parameteres you need to give to NGINX container.
 ```
 --name: Container name, could be anything..
 -p: Container port and public port
--v: Volumes from! This is important!! modify first string before : to match your test folder path!!!
+-v: Volumes from! This is important!! modify first string before : !!!
 ```  
 
 Next start NGINX container using following command:  
@@ -101,14 +100,15 @@ Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JA
 sudo docker pull registry.gitlab.com/jamkit/robot-framework-standalone:latest
 ```    
 
-Lets have look what parameteres you can give to container.  
+Lets have look what parameteres/ENV variables you can give to container.  
 ```
 RUN_TYPE = (robot, pybot or sh)
 ROBOT_TESTS = Define path to your test files
 FILE = Name of your test file
 OUTPUTDIR = define path for output files
--v: Volumes from! This is important!! modify first string before : to match your test folder path!!!
+-v: Volumes from! Define path what container mounts.
 ```  
+Use should use paths where NGINX or Apache can find files...  
 
 You can run tests modifying following example command:  
 ```
@@ -121,27 +121,19 @@ sudo docker run -it --rm --privileged \
 jamkit/robot-framework-standalone 
 ```  
 
+After you have lauched container, you can see tests steps in your terminal. Tests will fail or pass and after tests are done container exits and moves reports to your reports folder what u defined in launch options.  
 
+Open your browser and navigate to your NGINX or Apache page.  
+When you r trying to view you reports, you get error message. You need to have JavaScript enabled.  
 
+In Firefox:  
+Navigate to address: about:config  
+Ctrl+f javascript.enabled and change value to TRUE.  
+Refresh your browser.  
 
-## Work organization
-
-![Gitlab Board](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/gitlab.png)
-
-Gitlabs Board view can be effectively used for tracking progress of your project.
-
-Remember that only users in your repository can view and edit board!
-
-## Time tracking
-
-Every project needs time tracking, nothing else to say. There are many great free softwares for that but in this case we use Toggl.
-Let's navigate to https://toggl.com/ and sign up. After that create new project.
-
-On Timer section on the left, you can start clock when you start working some task or set it manually afterwards.
-
-In Dashboard and Reports section, you can explore projects time tracking charts. Charts can be sorted by current user or team and timeline goes day up to one year.
-
-You can invite team members under Manage/Team by typing members emails.
-
-![Cooper toolchain](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/toggl_dash.png)
-
+In Chrome:  
+Navigate to Settings and Show advanced settings.  
+Under the the Privacy click on the Content settings.  
+Ctrl+f JavaScript and select Allow all sites to run JavaScript (recommended).
+Click on the OK button to close it.
+Exit from settings and refresh page.  
