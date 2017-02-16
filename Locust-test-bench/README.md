@@ -3,10 +3,9 @@
 ![](https://pbs.twimg.com/profile_images/1867636195/locust-logo-orignal.png)  
 
 ##### Table of Contents
-[Locust](#locust)    
+[Locust](#locust)   
+[Test cases](#testcases)
 [Locust container](#locustcontainer)    
- [Test cases](#testcases)   
- 
 
 
 # Locust
@@ -23,8 +22,12 @@ Check links:
 [Stress testing](https://en.wikipedia.org/wiki/Stress_testing)  
 
 
+# Test cases  
 
-![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/testi2.png)
+Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
+Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
+You can use either Chrome or Firefox. Look chrome example below.  
+IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
 
 
 # Locust container
@@ -37,6 +40,10 @@ Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JA
 sudo docker pull registry.gitlab.com/jamkit/locust-standalone:latest
 ```    
 You can run container with or and without webUI! If you choose with, then u have to manually add parameters in browser but you see test execution live. WebUI can be found: ip:8089    
+
+
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/testi2.png)  
+
 
 Below you find two examples.  
 
@@ -85,45 +92,5 @@ jamkit/locust-standalone
 -------------------------------------------------------------------
 
 
-After tests are done container exits and moves reports to your reports folder what u defined in launch options.  IF you chose to run with webUI you must download report manually using webUI.
+After tests are done container exits and moves reports to your reports folder what u defined in launch options.  IF you chose to run with webUI you must download report manually using webUI.  
 
-Open your browser and navigate to your NGINX or Apache page.  
-When you r trying to view you reports, you get error message. You need to have JavaScript enabled.  
-
-In Firefox:  
-Navigate to address: about:config  
-Ctrl+f javascript.enabled and change value to TRUE.  
-Refresh your browser.  
-
-In Chrome:  
-Navigate to Settings and Show advanced settings.  
-Under the the Privacy click on the Content settings.  
-Ctrl+f JavaScript and select Allow all sites to run JavaScript (recommended).
-Click on the OK button to close it.
-Exit from settings and refresh page.  
-
-
-## Test cases  
-
-Next write some test cases or clone from gitlab etc. Use same path that you gave to nginx container or if you had apache or nginx installed, use default folder.  
-Quick start guide can be found at [QUICKSTART](https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst)  
-You can use either Chrome or Firefox. Look chrome example below.  
-IF you r using firefox, remove Keywords segment and rename chrome to firefox.  
-
-```
- *** Settings ***
-Documentation    Testataan haku
-Library    Selenium2Library
-Library    OperatingSystem
-*** Keywords ***
-Set Environment Variable    webdriver.chrome.driver      /usr/bin/chromedriver.exe
-
-*** Test Cases ***
-Hausta Suoraan Sivulle
-    Open Browser            https://en.wikipedia.org/wiki/            chrome
-    Input Text            searchInput            finland
-    Click Element            searchButton
-    Wait Until Page Contains    Finland                timeout=10
-    Title Should Be            Finland - Wikipedia
-    [Teardown]            Close All Browsers
-```  
