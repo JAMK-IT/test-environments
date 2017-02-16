@@ -6,20 +6,12 @@
 [Robot Framework](#robot framework)    
 [Docker](#docker)  
 [Installation](#installation)  
+ [Optional NGINX](#optionalnginx)  
+ [Test cases](#testcases)  
 [Time tracking](#time-tracking)   
 [Communication channel](#communication-channel)    
 [Work organization](#work-organization)  
-[Documentation tools](#documentation-tools)  
-[Tool integrations](#tool-integrations)  
-[Mockups](#mockups)  
- [NinjaMock](#ninjamock)  
- [Fluid UI](#fluid-ui)  
-[Managing the code](#managing-the-code)  
-[Continuous Integration and Deployment](#continuous-integration-and-deployment)  
-[Platform for App Deployment](#platform-for-app-deployment)  
-[Feedback](#feedback)  
-[References and Links](#references-and-links)  
-[Questions & Answers](#questions-and-answers)
+
 
 # Robot Framework
 (aka. Wat?)
@@ -51,7 +43,7 @@ Check link:
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 
-### Optional NGINX  
+## Optional NGINX  
 If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
 
 ```  
