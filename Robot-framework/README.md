@@ -50,7 +50,8 @@ Check link:
 ## Installation
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
-Next pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
+
+# Optional NGINX
 If you dont have apache or nginx installed in your vm, pull NGINX image [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/nginx-basic).  
 
 Now we have all what we need.  
@@ -66,29 +67,9 @@ Next start NGINX container using following command:
 ```
 sudo docker run --name nginx -p 80:80 -d -v /opt/rfw-tests:/usr/share/nginx/html jamkit/nginx-basic  
 ```
+# Robot framework container
 
-
-
-
-When you have created an account and logged in you may install browser extension to make password management easier, but it is not mandatory. At the time of writing this guide the said browser extension was not available, so don't worry too much if you aren't able to install the browser extension.
-
-![CommonKey company creation](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A30%3A27.png)
-
-![CommonKey teams](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A33%3A39.png)
-
-![Invite users to CommonKey company](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A35%3A15.png)
-
-As you can see from the screenshots, it is possible to manage your password sharing with all kinds of options, for example creating teams inside your main account or just simply creating one company account without teams, whatever floats your boat. The most simplified option would be of course to just use one account without company option and share the password with all the users that have access to your projects' passwords, but feel free to compare pros and cons between various approaches. To avoid using too much time into tinkering with password management, it would be wise to go with somewhat simple approach, though.
-
-To create an example scenario here we've created our password account in CommonKey with two methods, Auto-login and Custom app. The rule of thumb is that if your application of choice is listed in Auto-login, it should be used, otherwise use Custom app.
-
-![CommonKey password account with auto-login](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A43%3A51.png)
-
-![CommonKey password account with custom app](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A44%3A56.png)
-
-After creating a password account you can open its details by clicking it on the list, in this example we are using personal Gmail account. When you have opened the account details, you can edit your password details, show the password in plain text for a few seconds, or copy it to your clipboard to paste it to your login of choice.
-
-![CommonKey copy password to clipboard](https://raw.githubusercontent.com/JAMK-IT/DOC10-example-project/master/images/Screenshot%20from%202015-11-06%2014%3A50%3A10.png)
+Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Robot-framework-standalone).  
 
 ## Work organization
 
