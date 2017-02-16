@@ -36,7 +36,7 @@ Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JA
 ```  
 sudo docker pull registry.gitlab.com/jamkit/locust-standalone:latest
 ```    
-You can run container with or and without webUI! If you choose with, then u ahve to manually add parameters in browser but you see test execution live.  
+You can run container with or and without webUI! If you choose with, then u have to manually add parameters in browser but you see test execution live. WebUI can be found: ip:8089    
 
 Below you find two examples.  
 
@@ -85,8 +85,7 @@ jamkit/locust-standalone
 -------------------------------------------------------------------
 
 
-
-After you have lauched container, you can see tests steps in your terminal. Tests will fail or pass and after tests are done container exits and moves reports to your reports folder what u defined in launch options.  
+After tests are done container exits and moves reports to your reports folder what u defined in launch options.  IF you chose to run with webUI you must download report manually using webUI.
 
 Open your browser and navigate to your NGINX or Apache page.  
 When you r trying to view you reports, you get error message. You need to have JavaScript enabled.  
