@@ -67,7 +67,7 @@ sudo docker run -it --rm --name locust \
 -e LOCUST_HATCH_RATE=1 \
 -e LOCUST_REPORT=/opt/Locust-tests/report.txt \
 -v /opt/Locust-tests:/opt/Locust-tests \
-jamkit/locust-standalone
+registry.gitlab.com/jamkit/locust-standalone
 ```  
 ------------------------------------------------------------------
 
@@ -81,7 +81,7 @@ sudo docker run -it --rm --name locust \
 -e LOCUST_LOCUSTFILE=locust-tests-new.py \
 -v /opt/Locust-tests:/opt/Locust-tests \
 -p 8089:8089 \
-jamkit/locust-standalone
+registry.gitlab.com/jamkit/locust-standalone
 ```  
 -------------------------------------------------------------------
 
