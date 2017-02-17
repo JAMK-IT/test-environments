@@ -32,12 +32,7 @@ Contriboard locust test can be found at [JAMKIT gitlab page](https://gitlab.com/
 # Locust container
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
-
-Pull latest Robot Framework image from [Gitlab.com/jamkit](https://gitlab.com/JAMKIT/Locust-standalone).  
-
-```  
-sudo docker pull registry.gitlab.com/jamkit/locust-standalone:latest
-```    
+  
 You can run container with or and without webUI! If you choose with, then u have to manually add parameters in browser but you see test execution live. WebUI can be found: ip:8089    
 
 
