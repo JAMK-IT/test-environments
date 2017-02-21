@@ -129,4 +129,5 @@ Click on the OK button to close it.
 Exit from settings and refresh page.  
 
 Video tutorials:  
-[Wikipedia example](https://www.youtube.com/watch?v=b4kaNnC18gE) 
+[Wikipedia example](https://www.youtube.com/watch?v=b4kaNnC18gE)  
+[Contriboard example](https://www.youtube.com/watch?v=e_J2R5K4gug)
