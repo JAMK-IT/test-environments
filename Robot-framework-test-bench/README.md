@@ -127,3 +127,6 @@ Under the the Privacy click on the Content settings.
 Ctrl+f JavaScript and select Allow all sites to run JavaScript (recommended).
 Click on the OK button to close it.
 Exit from settings and refresh page.  
+
+Video tutorials:  
+[Wikipedia example](https://www.youtube.com/watch?v=b4kaNnC18gE) 
