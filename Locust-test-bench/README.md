@@ -89,4 +89,5 @@ registry.gitlab.com/jamkit/locust-standalone
 After tests are done container exits and moves reports to your reports folder what u defined in launch options.  IF you chose to run with webUI you must download report manually using webUI.  
 
 Video tutorials:  
-[Locust](https://www.youtube.com/watch?v=Z2u9N_-gYsc) 
+[Locust-web](https://www.youtube.com/watch?v=Z2u9N_-gYsc)  
+[Locust](https://www.youtube.com/watch?v=pd8NSgAAt0Y)
