@@ -4,12 +4,12 @@
 
 ##### Table of Contents
 [Locust](#locust)   
-[Test cases](#testcases)  
-[Locust container](#locustcontainer)  
-[Deployment diagram](#deploymentdiagram)
+[Test cases](#test-cases)  
+[Locust container](#locust-container)  
+[Deployment diagram](#deployment-diagram)
 
 
-# Locust
+## Locust
 (aka. Wat?)
 
 [Locust](http://locust.io/) is open source load testing tool written in Python. Locust is web-oriented and tests are written in Python. Locust main purpose is to emulate real users and traffic so you can know your application stability and maximum operting capacity.  
@@ -23,14 +23,14 @@ Check links:
 [Stress testing](https://en.wikipedia.org/wiki/Stress_testing)  
 
 
-# Test cases  
+## Test cases  
 
 Next write some test cases or clone contriboard tests from gitlab etc.  
 
 Official locust documention for writing locusfiles can be found at [here](http://docs.locust.io/en/latest/writing-a-locustfile.html).   
 Contriboard locust test can be found at [JAMKIT gitlab page](https://gitlab.com/JAMKIT/Locust-tests.git).  
 
-# Locust container
+## Locust container
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
   
