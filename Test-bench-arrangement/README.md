@@ -29,3 +29,8 @@ Check link:
 
 ### Robot framework container
 ![Robot framework](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
+
+  
+
+  
+https://drive.google.com/open?id=0B4Ta42rfgIRgZlM4cldEOGNHa1E
