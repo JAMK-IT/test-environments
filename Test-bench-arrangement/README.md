@@ -17,9 +17,10 @@ Check link:
 
 
 
+# Debloyment diagrams  
 
 
-![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png)  
+![Locust-web](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png)  
 
 
 
@@ -27,4 +28,4 @@ sika
 
 
 
-![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
+![Robot framework](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
