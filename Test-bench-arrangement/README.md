@@ -10,26 +10,6 @@ Check link:
 
 
 ![](http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png)  
-
-
-
-
-
-
-
-# Deployment diagrams  
-
-
-### Locust-web container
-![Locust-web](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png)  
-
-
-
-
-
-### Robot framework container
-![Robot framework](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
-
   
 
 # Network diagram  
