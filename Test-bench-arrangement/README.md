@@ -17,7 +17,7 @@ Check link:
 
 
 
-# Debloyment diagrams  
+# Deployment diagrams  
 
 
 ### Locust-web container
