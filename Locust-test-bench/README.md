@@ -5,7 +5,8 @@
 ##### Table of Contents
 [Locust](#locust)   
 [Test cases](#testcases)  
-[Locust container](#locustcontainer)    
+[Locust container](#locustcontainer)  
+[Deployment diagram](#deploymentdiagram)
 
 
 # Locust
@@ -91,3 +92,9 @@ After tests are done container exits and moves reports to your reports folder wh
 Video tutorials:  
 [Locust-web](https://www.youtube.com/watch?v=Z2u9N_-gYsc)  
 [Locust](https://www.youtube.com/watch?v=pd8NSgAAt0Y)
+
+
+# Deployment diagram
+
+### Locust-web container
+![Locust-web](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png) 
