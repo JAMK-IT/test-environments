@@ -19,12 +19,13 @@ Check link:
 
 # Debloyment diagrams  
 
-# Locust-web
+
+## Locust-web
 ![Locust-web](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png)  
 
 
 
 
 
-# Robot framework
+## Robot framework
 ![Robot framework](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
