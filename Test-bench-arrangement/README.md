@@ -32,6 +32,6 @@ Check link:
 
   
 
- # Deployment diagram  
+# Network diagram  
  
 ![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/network3.png)  
