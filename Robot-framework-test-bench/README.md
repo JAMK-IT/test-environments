@@ -4,7 +4,6 @@
 
 ##### Table of Contents
 [Robot Framework](#robot-framework)    
-[Docker](#docker)  
 [Installation](#installation)  
  [Optional NGINX](#optional-nginx)  
  [Test cases](#test-cases)  
