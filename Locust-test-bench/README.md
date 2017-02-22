@@ -1,4 +1,4 @@
-## Locust test bench
+### Locust test bench
 
 ![](https://pbs.twimg.com/profile_images/1867636195/locust-logo-orignal.png)  
 
@@ -14,7 +14,7 @@
 
 [Locust](http://locust.io/) is open source load testing tool written in Python. Locust is web-oriented and tests are written in Python. Locust main purpose is to emulate real users and traffic so you can know your application stability and maximum operting capacity.  
 Locust is event-based so its possible to run thousands of concurrent users on a single host.  
-Locust tests are also possible to run distributed over multiple machines.  
+Locust tests are also possible to run distributed over multip le machines.  
 
 Check links:  
 [Understanding Load Testing](https://smartbear.com/learn/performance-testing/what-is-load-testing/)  
@@ -94,7 +94,7 @@ Video tutorials:
 [Locust](https://www.youtube.com/watch?v=pd8NSgAAt0Y)
 
 
-# Deployment diagram
+## Deployment diagram
 
 ### Locust-web container
 ![Locust-web](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/locust-web-debloyment.png) 
