@@ -3,16 +3,16 @@
 ![](http://qitaos.coding.me/img/logo.png)  
 
 ##### Table of Contents
-[Robot Framework](#robot framework)    
+[Robot Framework](#robot-framework)    
 [Docker](#docker)  
 [Installation](#installation)  
- [Optional NGINX](#optionalnginx)  
- [Test cases](#testcases)  
- [Robot framework container](#robotframeworkcontainer)   
- 
+ [Optional NGINX](#optional-nginx)  
+ [Test cases](#test-cases)  
+ [Robot framework container](#robot-framework-container)   
+[Deployment diagram] (#deployment-diagram)
 
 
-# Robot Framework
+## Robot Framework
 (aka. Wat?)
 
 Robot Framework is acceptance testing-framework. It was developed by Nokia Networks, but now its sponsored by [Robot Framework Foundation](http://robotframework.org/foundation/).  
@@ -29,13 +29,13 @@ Check links:
 [TDD](https://en.wikipedia.org/wiki/Test-driven_development)  
 
 
-# Installation
+## Installation
 
 First login to your virtual machine and install docker with following steps: [docs.docker.com](https://docs.docker.com/engine/installation/).  
 ![](http://www.itzgeek.com/wp-content/uploads/2015/01/Docker-Logo.png)  
 
 
-## Optional NGINX  
+### Optional NGINX  
 If you dont have apache or nginx installed in your vm.
 
 Lets have look what parameteres you need to give to NGINX container.  
@@ -79,7 +79,7 @@ Hausta Suoraan Sivulle
 ```  
 
 
-## Robot framework container
+### Robot framework container
 
 Lets have look what parameteres/ENV variables you can give to container.  
 ```
@@ -122,3 +122,7 @@ Exit from settings and refresh page.
 Video tutorials:  
 [Wikipedia example](https://www.youtube.com/watch?v=b4kaNnC18gE)  
 [Contriboard example](https://www.youtube.com/watch?v=e_J2R5K4gug)
+
+
+## Deployment diagram
+![Robot framework](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/deployment-diagram-rfw.png)  
