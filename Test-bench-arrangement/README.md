@@ -33,4 +33,4 @@ Check link:
   
 
   
-![](https://lh5.googleusercontent.com/bnvWUwTAft-_IDLi4fLMvA8n9eQgSbp3ePwBR7CZVFDxLFjuNfFMCpLyysH5zRGaH8hwu_gX=w1615-h936-rw)  
+![]()  
