@@ -59,4 +59,4 @@ More info at: [Rancher](http://rancher.com/)
 
 # Network diagram  
  
-![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/network3.png)  
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/network-diagram.png)  
