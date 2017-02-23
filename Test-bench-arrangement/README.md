@@ -7,7 +7,7 @@ Rancher is installed using below instructions: [Rancher installation](https://do
 
 
 
-env IMAGE
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/rancher-env.jpg) 
 
 
 In our setup Rancher has two different enviroments. Environments are Cattle based. One for hosts that are used only running defined containers and one for running any containers.  
@@ -16,16 +16,22 @@ More info available at: [Github.com/rancher](https://github.com/rancher/rancher/
 
 Hosts can be added using Rancher add host command.  
 
-IMAGE  
+
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/rancher-host.jpg)  
+
 
 After running command on host, host automatically pulls Rancher-agent container and joins part of Rancher Cattle.  
 
 
-HSOTS IMAGE  
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/rancher-hosts.jpg)  
 
 
 User can launch containers using Ranchers add stack command or straight from hosts command line using docker commands.  
-add stack IMAGE  
+
+
+![](https://raw.githubusercontent.com/JAMK-IT/test-environments/master/images/rancher-stack.jpg)  
+
+
 
 Rancher automatically selects host with lowest load or with free ports for your containers (if you have defined ports in your compose file).  
 User can also use tags to define wanted hosts for containers.  
